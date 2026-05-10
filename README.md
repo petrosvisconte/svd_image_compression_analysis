@@ -7,7 +7,7 @@ Do not copy or submit this work as your own.
 ---
 
 # Quality Versus Storage in SVD‑Based Image Compression  
-[Link to full research paper](M441_svd_image_compression.pdf)
+[Link to full research paper](M441_svd.pdf)
 
 ## Overview
 Low-rank matrix approximations using Singular Value Decomposition (SVD) are an effective approach to image compression. This project examines how varying the number of top k singular values impacts image quality and file size across three diverse datasets of colored JPEG images. Each image, randomly sampled from their respective dataset, was reconstructed at multiple ranks and saved as a PNG file to avoid additional lossy compression. Quality was assessed using Mean Squared Error (MSE) and Peak Signal-to-Noise Ratio (PSNR), while file size was directly recorded from the output PNG file. Results show that MSE decreases exponentially with increasing k, PSNR grows logarithmically, and file size also follows a logarithmic trend due to PNG’s compression algorithm. Based on our combined generated curves from all three datasets and individual analysis of each dataset, we determined the optimal k to be 25-30, which best balances image quality and file size.
